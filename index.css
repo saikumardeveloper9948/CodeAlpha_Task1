@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.gallery-container {
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+   }
+
+.image-viewer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#galleryImage {
+    width: 70%;
+    height:500px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .gallery-container {
+        width: 100%;
+    }
+
+    .image-viewer {
+        flex-direction: column;
+    }
+
+    #galleryImage {
+        width: 90%; 
+        max-width: 100%;
+        max-height: 300px; 
+        object-fit: contain; 
+    }
+
+    .nav-btn {
+        font-size: 24px;
+        padding: 8px; 
+    }
+
+    .thumbnails {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .thumbnail {
+        width: 50px; 
+        height: 50px;
+        margin: 5px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #galleryImage {
+        width: 100%;
+        max-height: 200px; 
+    }
+
+    .nav-btn {
+        font-size: 20px; 
+    }
+
+    .thumbnail {
+        width: 40px; 
+        height: 40px;
+    }
+}

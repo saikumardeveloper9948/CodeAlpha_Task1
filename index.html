@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="gallery-container">
+    <div class="image-viewer">
+        <button class="nav-btn" id="prevBtn">&#10094;</button>
+        <img id="galleryImage" src="https://img.freepik.com/premium-photo/mysterious-nature-view-background-ai-generated_751835-595.jpg" alt="Gallery Image">
+        <button class="nav-btn" id="nextBtn">&#10095;</button>
+    </div>
+    
+    <div class="thumbnails">
+        <img class="thumbnail" src="https://img.freepik.com/premium-photo/mysterious-nature-view-background-ai-generated_751835-595.jpg" alt="Thumbnail 1" onclick="changeImage('https://img.freepik.com/premium-photo/mysterious-nature-view-background-ai-generated_751835-595.jpg')">
+        <img class="thumbnail" src="https://thumbs.dreamstime.com/b/ai-generated-image-features-transparent-magic-sphere-which-mesmerizing-macro-view-bird-unfolds-sphere-291080220.jpg" alt="Thumbnail 2" onclick="changeImage('https://thumbs.dreamstime.com/b/ai-generated-image-features-transparent-magic-sphere-which-mesmerizing-macro-view-bird-unfolds-sphere-291080220.jpg')">
+        <img class="thumbnail" src="https://img.freepik.com/premium-photo/two-colorful-lovebirds-standing-close-together-looking-same-direction-concept-birds-love-colorful-together-close_864588-147556.jpg" alt="Thumbnail 3" onclick="changeImage('https://img.freepik.com/premium-photo/two-colorful-lovebirds-standing-close-together-looking-same-direction-concept-birds-love-colorful-together-close_864588-147556.jpg')">
+        <img class="thumbnail" src="https://images.ladbiblegroup.com/v3/assets/blt949ea8e16e463049/bltd03816b9fba20e29/6486ff1e2866a82a95f2e904/ai-human-animal.webp" alt="Thumbnail 4" onclick="changeImage('https://images.ladbiblegroup.com/v3/assets/blt949ea8e16e463049/bltd03816b9fba20e29/6486ff1e2866a82a95f2e904/ai-human-animal.webp')">
+        <img class="thumbnail" src="https://img.freepik.com/premium-photo/wild-animals-thriving-protected-forest-highlighting-importance-nature-conservation_1333757-111.jpg" alt="Thumbnail 5" onclick="changeImage('https://img.freepik.com/premium-photo/wild-animals-thriving-protected-forest-highlighting-importance-nature-conservation_1333757-111.jpg')">
+    </div>
+</div>
+
+<script src="index.js">
+  
+</script>
+
+</body>
+</html>
